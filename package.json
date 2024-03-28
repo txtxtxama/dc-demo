@@ -1,0 +1,29 @@
+{
+    "name": "dc-demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/txtxtxama/dc-demo"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:preview": "vitepress preview docs",
+        "cz": "czg",
+        "release": "bumpp --execute=\"npm run release:pre\" --all --no-push",
+        "release:pre": "npm run changelog && git add CHANGELOG.md",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "bumpp": "^9.4.0",
+        "conventional-changelog-cli": "^4.1.0",
+        "czg": "^1.9.0",
+        "vitepress": "^1.0.1"
+    }
+}
