@@ -1,5 +1,4 @@
 # 构建 VitePress 站点并将其部署到 GitHub Pages
-# 工作流名称
 name: Deploy VitePress site to Pages
 
 # 触发器
