@@ -7,7 +7,7 @@
     </div>
 </template>
 
-<script lang="js" setup>
+<script setup>
 import { downloadBlob } from '@/utils/blob'
 import { ElButton, ElInput } from 'element-plus'
 import { ref } from 'vue'
